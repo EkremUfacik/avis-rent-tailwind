@@ -33,17 +33,15 @@
     background-repeat: no-repeat;
 }
 
-.dateDiv {
-    /* z-index: -1; */
-}
 
 .react-datepicker {
     font-size: 20px !important;
 }
 
 .react-datepicker-wrapper {
-    /* z-index: 0 !important; */
+    /* z-index: -1 !important; */
 }
+
 
 .react-datepicker__month-container {
     /* background-color: brown !important; */

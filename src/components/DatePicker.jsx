@@ -8,7 +8,7 @@ function DatePick() {
   const [endTime, setEndTime] = useState();
 
   return (
-    <div className="w-64 -z-10 ">
+    <div className="w-64 ">
       <div className="flex gap-1 mb-3">
         <p className="text-xs flex items-center border-l-2 border-primary px-2">
           Alış Tarihi
@@ -20,7 +20,6 @@ function DatePick() {
           minDate={new Date()}
           startDate={startDate}
           endDate={endDate}
-          locale="tr-TR"
           dateFormat="dd MMMM"
           monthsShown={2}
           showPopperArrow={false}
@@ -36,7 +35,7 @@ function DatePick() {
           dateFormat="HH:mm"
           timeFormat="HH:mm"
           placeholderText="09:00"
-          className="px-2 h-12 text-2xl cursor-pointer w-20 bg-modalBlack text-white font-semibold text-center"
+          className="pick px-2 h-12 text-2xl cursor-pointer w-20 bg-modalBlack text-white font-semibold text-center"
         />
       </div>
 
@@ -51,7 +50,6 @@ function DatePick() {
           startDate={startDate}
           endDate={endDate}
           minDate={startDate}
-          locale="tr-TR"
           showPopperArrow={false}
           monthsShown={2}
           dateFormat="dd MMMM"
